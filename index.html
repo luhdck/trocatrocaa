@@ -1,0 +1,39 @@
+<html>
+    <body>
+        <button id="troca_cor">
+            Clique para trocar cor
+        </button>
+        
+        <script>
+            var btn = document.querySelector("#troca_cor")
+
+btn.addEventListener("click",trocarCor)
+
+
+function trocarCor() {
+	switch (document.body.style.backgroundColor ){
+  			case "black":
+        	document.body.style.backgroundColor = "blue"
+          break;
+        case "blue":
+        		document.body.style.backgroundColor = "white"
+           break;
+        case "red":
+        		document.body.style.backgroundColor = "black"
+           break;
+        case "pink":
+        		document.body.style.backgroundColor = "red"
+           break;
+        case "purple":
+        		document.body.style.backgroundColor = "pink"
+           break;
+         default:
+         		document.body.style.backgroundColor = "purple"
+          break;
+  }
+}
+
+
+        </script>
+    </body>
+</html>
